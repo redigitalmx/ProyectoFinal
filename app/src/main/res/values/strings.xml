@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <string name="nombreComp">Nombre Completo</string>
+
+    <string name="pick_date">Fecha de nacimiento</string>
+
+    <string name="nombre_hint">Nombre</string>
+    <string name="telefono_hint">Telefono</string>
+    <string name="email_hint">Email</string>
+    <string name="descripcion_hint">Descripción</string>
+
+
+
+
+</resources>
