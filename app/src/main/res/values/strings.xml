@@ -1,15 +1,24 @@
 <resources>
     <string name="app_name">ProyectoFinal</string>
-    <string name="nombreComp">Nombre Completo</string>
+
 
     <string name="pick_date">Fecha de nacimiento</string>
 
-    <string name="nombre_hint">Nombre</string>
-    <string name="telefono_hint">Telefono</string>
-    <string name="email_hint">Email</string>
-    <string name="descripcion_hint">Descripción</string>
+    <string name="nombre">Nombre</string>
+    <string name="fecha">6 de Julio de 1980</string>
+    <string name="telefono">Telefono</string>
+    <string name="email">Email</string>
+    <string name="descripcion">Descripción</string>
 
+    <string name="enviar">Registrar</string>
 
+    <string name="confirmar">Confirmar Datos</string>
 
+    <string name="pnombre">Juan Carlos Márquez</string>
+    <string name="ptelefono">111 766 630</string>
+    <string name="pemail">juancarlos@redigital.mx</string>
+    <string name="pdescripcion">Aprendiendo a desarrollar en Android Studio 2.2.2 </string>
+
+    <string name="btnEditar">Editar</string>
 
 </resources>

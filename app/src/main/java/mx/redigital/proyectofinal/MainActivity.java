@@ -3,10 +3,12 @@ package mx.redigital.proyectofinal;
 
 
 import android.app.DatePickerDialog;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.DatePicker;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +21,11 @@ public class MainActivity extends AppCompatActivity {
    private EditText etTelefono;
    private EditText etEmail;
    private EditText etDescripcion;
+
    private DatePickerDialog datePickerDialog;
+
+   private String tvNombre;
+   private String tvTelefono;
 
 
     @Override
@@ -27,17 +33,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    public void findViewsByID(){
-        etNombre = (EditText) findViewsByID(R.id.etNombre);
-        etTelefono = (EditText) findViewById(R.id.etTelefono);
-        etEmail= (EditText) findViewById(R.id.etEmail);
-        etDescripcion= (EditText) findViewById(R.id.etEmail);
-
-
-
-
+        EditText field = (EditText)findViewById(R.id.etNombre);
     }
 
 
     }
-}
+

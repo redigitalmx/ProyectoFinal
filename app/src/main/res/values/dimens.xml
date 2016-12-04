@@ -3,8 +3,5 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="margin_left">8dp</dimen>
-    <dimen name="dpheight">250dp</dimen>
-    <dimen name="margen">40dp</dimen>
-    <dimen name="confirmar_c">10dp</dimen>
-    <dimen name="telefono">30dp</dimen>
+    <dimen name="text">20sp</dimen>
 </resources>
