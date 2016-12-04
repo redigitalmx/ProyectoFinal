@@ -5,7 +5,7 @@
     <string name="pick_date">Fecha de nacimiento</string>
 
     <string name="nombre">Nombre</string>
-    <string name="fecha">6 de Julio de 1980</string>
+    <string name="fecha">DD/MM/AAAA</string>
     <string name="telefono">Telefono</string>
     <string name="email">Email</string>
     <string name="descripcion">Descripción</string>
