@@ -39,15 +39,26 @@
       />
 
    <TextView
-        android:id="@+id/tvTelefono"
+        android:id="@+id/tvddTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ddtelefono"
         android:textSize="@dimen/text"
         android:layout_marginTop="20dp"  />
 
+
     <TextView
-        android:id="@+id/tvDescripcion"
+        android:id="@+id/tvddEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ddemail"
+        android:textSize="@dimen/text"
+        android:layout_marginTop="20dp"  />
+
+
+
+    <TextView
+        android:id="@+id/tvddDescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dddescripcion"

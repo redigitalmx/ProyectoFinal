@@ -34,16 +34,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        tilNombre       = (TextInputLayout) findViewById(R.id.til_nombre);
-        tilTelefono     = (TextInputLayout) findViewById(R.id.til_telefono);
-        tilCorreo       = (TextInputLayout) findViewById(R.id.til_email);
-        tilDescripcion  = (TextInputLayout) findViewById(R.id.til_descripcion);
+        tilNombre = (TextInputLayout) findViewById(R.id.til_nombre);
+        tilTelefono = (TextInputLayout) findViewById(R.id.til_telefono);
+        tilCorreo = (TextInputLayout) findViewById(R.id.til_email);
+        tilDescripcion = (TextInputLayout) findViewById(R.id.til_descripcion);
 
 
-        etnombre        = (EditText) findViewById(R.id.etNomCompleto);
-        ettelefono      = (EditText) findViewById(R.id.etTelefono);
-        etcorreo        = (EditText) findViewById(R.id.etEmail);
-        etdescripcion   = (EditText) findViewById(R.id.etDescripcion);
+        etnombre = (EditText) findViewById(R.id.etNomCompleto);
+        ettelefono = (EditText) findViewById(R.id.etTelefono);
+        etcorreo = (EditText) findViewById(R.id.etEmail);
+        etdescripcion = (EditText) findViewById(R.id.etDescripcion);
         //fpfnac = (DatePicker)  findViewById(R.id.dpFecNac);
 
         if (getIntent().getStringExtra("validar") != null) {
@@ -128,45 +128,51 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean esTelefonoValido(String telefono) {
-        if (!Pattern.PHONE.matcher(telefono).matches()) {
-            tilTelefono.setError("Teléfono inválido");
-            return false;
-        } else {
-            tilTelefono.setError(null);
-        }
 
         return true;
     }
 
 
-        private boolean esCorreoValido (String correo) {
+    private boolean esCorreoValido(String correo) {
 
-            return true;
-        }
-
-
-        private void validarDatos(){
-
-            String nombre   =tilNombre.getEditText().getText().toString();
-            String telefono =tilTelefono.getEditText().getText().toString();
-            String correo   =tilCorreo.getEditText().getText().toString();
-
-            boolean a = esNombreValido(nombre);
-            boolean b = esTelefonoValido(telefono);
-            boolean c = esCorreoValido(correo);
-
-        }
+        return true;
+    }
 
 
-    private void enviarDatos(){
+    private void validarDatos() {
 
-        Intent intent=new Intent(MainActivity.this,ConfirmarDatos.class);
-        intent.putExtra("nombre",etnombre.getText().toString());
-        intent.putExtra("telefono",ettelefono.getText().toString());
-        intent.putExtra("correo",etcorreo.getText().toString());
-        intent.putExtra("descripcion",etdescripcion.getText().toString());
+        String nombre   = tilNombre.getEditText().getText().toString();
+        String telefono = tilTelefono.getEditText().getText().toString();
+        String correo   = tilCorreo.getEditText().getText().toString();
+
+        boolean a = esNombreValido(nombre);
+        boolean b = esTelefonoValido(telefono);
+        boolean c = esCorreoValido(correo);
+
+    }
+
+
+    private void enviarDatos() {
+
+        Intent intent = new Intent(MainActivity.this, ConfirmarDatos.class);
+        intent.putExtra("nombre", etnombre.getText().toString());
+        intent.putExtra("telefono", ettelefono.getText().toString());
+        intent.putExtra("correo", etcorreo.getText().toString());
+        intent.putExtra("descripcion", etdescripcion.getText().toString());
         startActivity(intent);
         finish();
 
-}
+    }
 
+    private void recibirdatos(){
+
+        Bundle bundle = this.getIntent().getExtras();
+        String nombre2 =
+
+
+
+    }
+
+
+    }
+}
