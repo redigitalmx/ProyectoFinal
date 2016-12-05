@@ -14,26 +14,26 @@
 
 
 <TextView
-    android:id="@+id/tvConfirmar"
-    android:layout_width="match_parent"
+    android:id="@+id/tvddTitulo"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/confirmar"
+    android:text="@string/ddtitulo"
     android:textSize="@dimen/text"
     android:textStyle="bold"  />
 
  <TextView
-        android:id="@+id/tvNombre"
+        android:id="@+id/ddNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/pnombre"
+        android:text="@string/ddnombre"
         android:textSize="@dimen/text"
         android:layout_marginTop="20dp" />
 
-  <TextView
-        android:id="@+id/tvFecha"
+ <TextView
+        android:id="@+id/tvddFecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/fecha"
+        android:text="@string/ddfecnac"
         android:textSize="@dimen/text"
         android:layout_marginTop="20dp"
       />
@@ -42,24 +42,24 @@
         android:id="@+id/tvTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ptelefono"
+        android:text="@string/ddtelefono"
         android:textSize="@dimen/text"
         android:layout_marginTop="20dp"  />
 
     <TextView
         android:id="@+id/tvDescripcion"
         android:layout_width="wrap_content"
-        android:layout_height="186dp"
-        android:text="@string/pdescripcion"
+        android:layout_height="wrap_content"
+        android:text="@string/dddescripcion"
         android:textSize="@dimen/text"
         android:layout_marginTop="20dp"
         android:layout_weight="0.52" />
 
     <Button
-        android:id="@+id/btnEditar"
+        android:id="@+id/btEditarDatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnEditar"
+        android:text="@string/bteditardatos"
         />
 
 </LinearLayout>

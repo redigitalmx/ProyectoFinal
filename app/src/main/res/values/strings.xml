@@ -2,33 +2,22 @@
     <string name="app_name">ProyectoFinal</string>
 
 
-    <string name="name">Name</string>
-
+    <string name="nomcompleto">Nombre Completo</string>
     <string name="bdate">DD/MM/AAAA</string>
-
-    <string name="bphone">Telefono</string>
-
+    <string name="telefono">Telefono</string>
     <string name="email">Email</string>
-
-    <string name="description">Descripción</string>
-
-    <string name="btnRegistro">Registrar</string>
+    <string name="descContacto">Descripcion del Contacto</string>
+    <string name="btnReg">Registrar</string>
 
 
+    <string name="ddtitulo">Cofirmar Datos</string>
+    <string name="ddnombre">Nombre</string>
+    <string name="ddfecnac">Fecha Nacimiento: </string>
+    <string name="ddemail">Email: </string>
+    <string name="ddtelefono">Tel: </string>ing>
+    <string name="dddescripcion">Descripción: </string>
+    <string name="bteditardatos"> Editar Datos</string>
 
 
-
-
-    <string name="confirmar">Confirmar Datos</string>
-
-    <string name="pnombre">Juan Carlos Márquez</string>
-
-    <string name="ptelefono">111 766 630</string>
-
-    <string name="pemail">juancarlos@redigital.mx</string>
-
-    <string name="pdescripcion">Aprendiendo a desarrollar en Android Studio 2.2.2 </string>
-
-    <string name="btnEditar">Editar</string>
 
 </resources>
