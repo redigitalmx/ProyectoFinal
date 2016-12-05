@@ -23,15 +23,14 @@
             android:src="@drawable/user_48"
             android:layout_gravity="center" />
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/tilNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_left" >
         <EditText
-            android:id="@+id/etNombre"
+            android:id="@+id/name"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nombre"
+            android:hint="Nombre"
             android:inputType="text"
             android:layout_marginLeft="@dimen/margin_left"/>
         </android.support.design.widget.TextInputLayout>
@@ -50,17 +49,16 @@
             android:src="@drawable/calendar_50"/>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/tilFecha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etFecha"
+                android:id="@+id/bdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_left"
                 android:ems="10"
-                android:hint="@string/fecha"
+                android:hint="DD/MM/AAAA"
                 android:inputType="text"
                 android:layout_gravity="center"/>
         </android.support.design.widget.TextInputLayout>
@@ -72,7 +70,6 @@
             android:layout_height="match_parent">
         </DatePicker>
        -->
-
     </LinearLayout>
 
     <LinearLayout
@@ -86,16 +83,15 @@
             android:src="@drawable/phone_64"
             android:layout_gravity="center"/>
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/tilTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etTelefono"
+                android:id="@+id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:ems="10"
-                android:hint="@string/telefono"
+                android:hint="Phone"
                 android:inputType="phone"
                 android:layout_marginLeft="@dimen/margin_left"/>
         </android.support.design.widget.TextInputLayout>
@@ -111,11 +107,10 @@
             android:layout_height="match_parent"
             android:src="@drawable/address_book_50"/>
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/tilEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:ems="10"
@@ -135,25 +130,24 @@
             android:layout_height="match_parent"
             android:src="@drawable/survey_filled_50"/>
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/tilDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/etDescripcion"
+            android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin_left"
             android:ems="10"
-            android:hint="@string/descripcion"
+            android:hint="Descripcion Contacto"
             android:inputType="textUri"  />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnEnviar"
+        android:id="@+id/btnreg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/enviar"
+        android:text="Registro"
         android:layout_marginTop="140dp" />
 
 

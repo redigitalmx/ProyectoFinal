@@ -14,11 +14,11 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
 
-   private EditText etNombre;
-   private EditText etFecha;
-   private EditText etTelefono;
-   private EditText etEmail;
-   private EditText etDescripcion;
+   private EditText name;
+   private EditText bdate;
+   private EditText bphone;
+   private EditText email;
+   private EditText description;
 
    private DatePickerDialog datePickerDialog;
 
@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText tvnombre       = (EditText)findViewById(R.id.etNombre);
-        EditText tvfecha        = (EditText)findViewById(R.id.etFecha);
-        EditText tvtelefono     = (EditText)findViewById(R.id.etTelefono);
-        EditText tvemail        = (EditText)findViewById(R.id.etEmail);
-        EditText tvdescripcion  = (EditText)findViewById(R.id.etDescripcion);
+        EditText nombre       = (EditText)findViewById(R.id.etNombre);
+        EditText fecha        = (EditText)findViewById(R.id.etFecha);
+        EditText telefono     = (EditText)findViewById(R.id.etTelefono);
+        EditText email        = (EditText)findViewById(R.id.etEmail);
+        EditText descripcion  = (EditText)findViewById(R.id.etDescripcion);
 
 
     }
