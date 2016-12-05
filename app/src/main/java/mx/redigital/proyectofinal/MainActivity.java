@@ -1,7 +1,6 @@
 package mx.redigital.proyectofinal;
-import android.app.DatePickerDialog;
+
 import android.content.Intent;
-import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,8 +9,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.DatePicker;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.regex.Pattern;
 
@@ -93,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                esCorreoValido(String.valueOf(s));
+
             }
 
             @Override
@@ -149,10 +147,14 @@ public class MainActivity extends AppCompatActivity {
         boolean b = esTelefonoValido(telefono);
         boolean c = esCorreoValido(correo);
 
+
+        if(a && b && c){
+
+            Toast.makeText(this, "Datos Correctos",Toast.LENGTH_LONG).show();
+            enviarDatos();
+        }
     }
-
-
-    private void enviarDatos() {
+    private void enviarDatos(){
 
         Intent intent = new Intent(MainActivity.this, ConfirmarDatos.class);
         intent.putExtra("nombre", etnombre.getText().toString());
@@ -166,12 +168,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void recibirdatos(){
 
-        Bundle bundle = this.getIntent().getExtras();
-        String nombre2 =
+        Bundle bundle       = this.getIntent().getExtras();
+        String nombre2      =bundle.getString("nombre2");
+        String telefono2    =bundle.getString("telefono2");
+        String email2       =bundle.getString("email2");
+        String descripcion2 =bundle.getString("descripcion2");
 
 
 
-    }
+
+
 
 
     }
