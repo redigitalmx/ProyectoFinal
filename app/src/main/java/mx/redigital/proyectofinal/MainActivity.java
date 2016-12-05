@@ -15,9 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
 
    private EditText etNombre;
-
-   //private EditText etFecha
-
+   private EditText etFecha;
    private EditText etTelefono;
    private EditText etEmail;
    private EditText etDescripcion;
@@ -25,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
    private DatePickerDialog datePickerDialog;
 
    private String tvNombre;
+   private String tvFecha;
    private String tvTelefono;
 
 
@@ -33,9 +32,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText field = (EditText)findViewById(R.id.etNombre);
-    }
+        EditText tvnombre       = (EditText)findViewById(R.id.etNombre);
+        EditText tvfecha        = (EditText)findViewById(R.id.etFecha);
+        EditText tvtelefono     = (EditText)findViewById(R.id.etTelefono);
+        EditText tvemail        = (EditText)findViewById(R.id.etEmail);
+        EditText tvdescripcion  = (EditText)findViewById(R.id.etDescripcion);
 
 
     }
+}
 
