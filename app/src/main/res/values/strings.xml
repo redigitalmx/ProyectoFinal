@@ -3,7 +3,7 @@
 
 
     <string name="nomcompleto">Nombre Completo</string>
-    <string name="bdate">DD/MM/AAAA</string>
+
     <string name="telefono">Telefono</string>
     <string name="email">Email</string>
     <string name="descContacto">Descripcion del Contacto</string>

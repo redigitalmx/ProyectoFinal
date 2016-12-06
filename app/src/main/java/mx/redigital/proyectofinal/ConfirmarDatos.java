@@ -12,6 +12,7 @@ import android.view.KeyEvent;
 public class ConfirmarDatos extends AppCompatActivity {
 
     private TextView tvNombre;
+    private TextView tvFechanacimien;
     private TextView tvTelefono;
     private TextView tvEmail;
     private TextView tvDescripcion;
@@ -27,15 +28,18 @@ public class ConfirmarDatos extends AppCompatActivity {
 
         String nombre       = bundle.getString("nombre");
         String telefono     = bundle.getString("telefono");
+        String fechanac     = bundle.getString("fechnac");
         String email        = bundle.getString("email");
         String descripcion  = bundle.getString("descripcion");
 
         tvNombre        = (TextView) findViewById(R.id.ddNombre);
+        tvFechanacimien = (TextView) findViewById(R.id.tvddFecNac) ;
         tvTelefono      = (TextView) findViewById(R.id.tvddTelefono);
         tvEmail         = (TextView) findViewById(R.id.tvddEmail);
         tvDescripcion   = (TextView) findViewById(R.id.tvddDescripcion);
 
         tvNombre.setText(nombre);
+        tvFechanacimien.setText(fechanac);
         tvTelefono.setText(telefono);
         tvEmail.setText(email);
         tvDescripcion.setText(descripcion);
@@ -67,6 +71,7 @@ public class ConfirmarDatos extends AppCompatActivity {
         Toast.makeText(this,"Enviando informacion para editar", Toast.LENGTH_LONG).show();
         Intent intent =new Intent(ConfirmarDatos.this,MainActivity.class);
         intent.putExtra("nombre2",tvNombre.getText().toString());
+        intent.putExtra("fechnac2",tvFechanacimien.toString());
         intent.putExtra("telefono2",tvTelefono.getText().toString());
         intent.putExtra("correo2",tvEmail.getText().toString());
         intent.putExtra("descripcion2",tvDescripcion.getText().toString());

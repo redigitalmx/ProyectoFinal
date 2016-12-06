@@ -174,6 +174,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, ConfirmarDatos.class);
         intent.putExtra("nombre", etnombre.getText().toString());
         intent.putExtra("fechnac",fechnac.toString());
+        Toast.makeText(this, fechnac.toString(),Toast.LENGTH_LONG).show();
         intent.putExtra("telefono", ettelefono.getText().toString());
         intent.putExtra("correo", etcorreo.getText().toString());
         intent.putExtra("descripcion", etdescripcion.getText().toString());
@@ -186,15 +187,26 @@ public class MainActivity extends AppCompatActivity {
 
         Bundle bundle       = this.getIntent().getExtras();
         String nombre2      =bundle.getString("nombre2");
+        String fechanac2    =bundle.getString("fechnac2");
         String telefono2    =bundle.getString("telefono2");
         String email2       =bundle.getString("email2");
         String descripcion2 =bundle.getString("descripcion2");
 
+        tvNombre        = (EditText) findViewById(R.id.etNomCompleto);
+        tvFechanacimien = (DatePicker) findViewById(R.id.dpFecNac);
+        tvTelefono      = (EditText) findViewById(R.id.etTelefono);
+        tvEmail         = (EditText) findViewById(R.id.etEmail);
+        tvDescripcion   = (EditText) findViewById(R.id.etDescripcion);
 
+        int year    = dpfnac.getYear();
+        int mes     = dpfnac.getMonth();
+        int dia     = dpfnac.getDayOfMonth();
 
-
-
-
+        tvNombre.setText(nombre2);
+        tvFechanacimien.updateDate(year,mes,dia);
+        tvTelefono.setText(telefono2);
+        tvEmail.setText(email2);
+        tvDescripcion.setText(descripcion2);
 
     }
 }
