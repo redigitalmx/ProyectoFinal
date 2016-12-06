@@ -49,11 +49,10 @@
             android:layout_gravity="center"
             android:src="@drawable/calendar_50"/>
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <EditText
+        <!-- Fecha en numero
+
+         <EditText
                 android:id="@+id/bdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -62,15 +61,17 @@
                 android:hint="DD/MM/AAAA"
                 android:inputType="text"
                 android:layout_gravity="center"/>
-        </android.support.design.widget.TextInputLayout>
-        <!-- En proceso
+        -->
 
         <DatePicker
-            android:id="@+id/dpFecha"
+            android:id="@+id/dpFecNac"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-        </DatePicker>
-       -->
+            android:layout_height="140dp"
+            android:layout_margin="@dimen/margen"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:soundEffectsEnabled="false" />
+
     </LinearLayout>
 
     <LinearLayout

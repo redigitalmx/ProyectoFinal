@@ -8,6 +8,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -26,6 +27,18 @@ public class MainActivity extends AppCompatActivity {
     private EditText etcorreo;
     private EditText etdescripcion;
 
+    private String fechnac;
+    private DatePicker dpfnac;
+
+    //Variables que reciben los datos
+
+    private EditText    tvNombre;
+    private DatePicker  tvFechanacimien;
+    private EditText    tvTelefono;
+    private EditText    tvEmail;
+    private EditText    tvDescripcion;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         ettelefono = (EditText) findViewById(R.id.etTelefono);
         etcorreo = (EditText) findViewById(R.id.etEmail);
         etdescripcion = (EditText) findViewById(R.id.etDescripcion);
-        //fpfnac = (DatePicker)  findViewById(R.id.dpFecNac);
+        dpfnac = (DatePicker)  findViewById(R.id.dpFecNac);
 
         if (getIntent().getStringExtra("validar") != null) {
             recibirdatos();
@@ -156,8 +169,11 @@ public class MainActivity extends AppCompatActivity {
     }
     private void enviarDatos(){
 
+        dpfnac = (DatePicker)findViewById(R.id.dpFecNac);
+        fechnac = Integer.toString(dpfnac.getYear()) + "/" + Integer.toString((dpfnac.getMonth()) + 1) + "/" +Integer.toString(dpfnac.getMonth());
         Intent intent = new Intent(MainActivity.this, ConfirmarDatos.class);
         intent.putExtra("nombre", etnombre.getText().toString());
+        intent.putExtra("fechnac",fechnac.toString());
         intent.putExtra("telefono", ettelefono.getText().toString());
         intent.putExtra("correo", etcorreo.getText().toString());
         intent.putExtra("descripcion", etdescripcion.getText().toString());
